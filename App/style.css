@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 68px 0px;
+}
+
+
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /*5dade2*/ 
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: 'Montserrat', cursive;
+  font-size: 140%;
+}
+
+li a:hover:not(.active) {
+  background-color: #;
+}
+
+
+/*Intro image*/
+.container {
+  position: ;
+}
+
+/*Place text in the middle of image*/
+.center {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 7vw;
+  font-family: 'Montserrat', cursive;
+  color: #fff;
+}
+
+/*Size adjustment*/
+.photo {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+/*Headings*/
+.heading {
+  font-family: 'Montserrat', cursive;
+  font-size: 40px;
+}
+
+
+/*About section*/
+.about {
+  padding: 30px;
+  text-align: center;
+  color: #5dade2;
+  font-size: 18px;
+}
+
+
+/*Project section*/
+.us {
+  padding: 30px;
+  text-align: center;
+  background-color: #5dade2;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*Grid css*/
+.row {
+  display: inline-flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.icon {
+    padding-bottom: 20px;
+  width: 30%;
+}
+
+.icon-text {
+  font-family: "Montserrat", cursive;
+  color: #fff;
+  font-size: 40px;
+    font-weight: bold;
+}
+
+/*Stack images one on top of the other below 600px*/
+@media screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*Contact section*/
+.contact {
+  padding: 30px;
+  text-align: ;
+  color: #5dade2;
+  font-size: 18px;
+}
+label {
+    display: block !important;
+    margin-bottom: .5rem;
+}
+
+Text fields
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #5dade2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  height: 200px;
+}
+
+
+input[type=submit] {
+  background-color: #5dade2;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+footer {
+  display:flex;
+  justify-content: center;
+  background-color: #5dade2;
+  text-align: center;
+  padding: 10px;
+}
+
+.font-icon {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+}
+.uswidth{
+    50%;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #5dade2;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #5dade2;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #5dade2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    width: 10%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
